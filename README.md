@@ -66,7 +66,7 @@
 
         return score;
     }
-}
+    }
 		
 ```
 ## Bonus
@@ -106,7 +106,9 @@
      */
     int CalculateScore(int CorrectCount, int IncorrectCount) throws GameScoreException;
 }
-	```
+	
+```
+## gabriel
 
 
 4. Haga commit de lo realizado hasta ahora. Desde la terminal:
