@@ -108,7 +108,7 @@
 	
 ```
 
-
+##parte labo
 
 4. Haga commit de lo realizado hasta ahora. Desde la terminal:
 
@@ -116,6 +116,7 @@
 	git add .			
 	git commit -m "especificación métodos"
 	```
+	![image](https://user-images.githubusercontent.com/98113396/222856347-75499ad9-ce0b-4066-9a33-b13d179b64e4.png)
 
 5. Actualice el archivo `pom.xml` e incluya las dependencias para la ultima versión de JUnit y la versión del compilador de Java a la versión 8 .
    
