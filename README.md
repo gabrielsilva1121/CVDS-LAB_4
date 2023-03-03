@@ -18,18 +18,89 @@
    modelo antes indicado.
    
    ## powerScore
+   ```
    
-   ![image](https://user-images.githubusercontent.com/98113396/222854918-6be4450a-caf7-4896-988a-7f7319e58ade.png)
+   public class PowerScore implements  GameScore{
+
+    /**
+     * @pre Inicia con 0 puntos, puntaje minimo 0
+     * @pos Se bonifica con 10 puntos cada letra correcta, se penaliza con -5 puntos letra incorrecta
+     * @param CorrectCount numero de filas
+     * @param IncorrectCount numero de columnas
+     * @return Score
+     */
+    public int CalculateScore(int CorrectCount, int IncorrectCount) throws GameScoreException{
+        if(CorrectCount < 0 || IncorrectCount < 0) {throw new GameScoreException(GameScoreException.INVALID_PARAMETERS);}
+        int score = 0;
+        if(CorrectCount > 0){
+            for(int x = 0; x < CorrectCount; x++){
+                score += Math.pow(5,x+1);
+            }
+        }
+        if(IncorrectCount > 0 ){
+            score -= 8 * IncorrectCount;
+        }
+        if (score >= 500){ score = 500;}
+        if (score < 0){score = 0;}
+        return score;
+    }
+}
+
+```
+   
    
    ## originalScore
+   ```
+   public class OriginalScore implements  GameScore {
+    /**
+     * @pre Se inicia con 100 puntos, puntaje minimo 0
+     * @pos Se penaliza con 10 puntos por cada letra incorrecta
+     * @param CorrectCount numero de letras correctas
+     * @param IncorrectCount numero de letras incorrectas
+     * @return score
+     */
+    public int CalculateScore(int CorrectCount, int IncorrectCount) throws GameScoreException{
+        if(CorrectCount < 0 || IncorrectCount < 0) {throw new GameScoreException(GameScoreException.INVALID_PARAMETERS);}
+        int score = 100;
+        if(IncorrectCount > 0 ){
+            score -= IncorrectCount * 10;
+        }
+        if(score < 0 ){ score = 0;}
+
+        return score;
+    }
+}
+```
    
-   ![image](https://user-images.githubusercontent.com/98113396/222854991-2eb8c441-503e-48ed-9509-6ab609783d31.png)
+  
    
    ## Bonus
-   ![image](https://user-images.githubusercontent.com/98113396/222855084-4c5ac7bb-8d2c-4562-a11b-d577777df64b.png)
+   ```
+   
+   public class BonusScore implements  GameScore{
+
+    /**
+     * @pre Inicia con 0 puntos, puntaje minimo 0
+     * @pos Se bonifica con 5^numeroLetra, Se penaliza con -8 puntos cada letra incorrecta
+     * @param CorrectCount numero de letras correctas
+     * @param IncorrectCount numero de letras incorrectas
+     * @return Score,  si el score supera 500 puntos, el jugador obtiene como puntaje final 500.
+     */
+    public int CalculateScore(int CorrectCount, int IncorrectCount) throws GameScoreException{
+        if(CorrectCount < 0 || IncorrectCount < 0) {throw new GameScoreException(GameScoreException.INVALID_PARAMETERS);}
+        int score = 0;
+        if(CorrectCount > 0){ score += 10 * CorrectCount;}
+        if(IncorrectCount > 0){score -= 5 * IncorrectCount;}
+        if(score < 0){ score = 0;}
+        return score;
+    }
+}
+
+```
+   
 
  ## implementación clase 
- ![image](https://user-images.githubusercontent.com/98113396/222855165-a3cbb222-663f-4b70-92f2-8a1ffc687af3.png)
+ 
  ```
  
  public interface GameScore {
