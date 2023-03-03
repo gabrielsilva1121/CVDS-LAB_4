@@ -46,9 +46,6 @@
     }
 }
 
-	```
-   
-   
    ## originalScore
    ```
    public class OriginalScore implements  GameScore {
@@ -70,15 +67,11 @@
         return score;
     }
 }
-
+		
 ```
-   
-  
-   
-   ## Bonus
+## Bonus
    
    ```
-   
    public class BonusScore implements  GameScore{
 
     /**
@@ -97,8 +90,7 @@
         return score;
     }
 }
-
-	```
+```
    
 
  ## implementación clase 
