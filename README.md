@@ -30,6 +30,18 @@
 
  ## implementación clase 
  ![image](https://user-images.githubusercontent.com/98113396/222855165-a3cbb222-663f-4b70-92f2-8a1ffc687af3.png)
+ ```
+ 
+ public interface GameScore {
+
+    /**
+     * @param CorrectCount numero de letras correctas
+     * @param IncorrectCount numero de letras incorrectas
+     * @return score
+     */
+    int CalculateScore(int CorrectCount, int IncorrectCount) throws GameScoreException;
+}
+```
 
 
 4. Haga commit de lo realizado hasta ahora. Desde la terminal:
