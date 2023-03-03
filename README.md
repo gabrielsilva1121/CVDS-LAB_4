@@ -44,7 +44,6 @@
         if (score < 0){score = 0;}
         return score;
     }
-}
 
    ## originalScore
    ```
@@ -108,7 +107,7 @@
 }
 	
 ```
-## gabriel
+
 
 
 4. Haga commit de lo realizado hasta ahora. Desde la terminal:
