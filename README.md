@@ -46,7 +46,7 @@
     }
 }
 
-```
+	```
    
    
    ## originalScore
@@ -70,11 +70,13 @@
         return score;
     }
 }
+
 ```
    
   
    
    ## Bonus
+   
    ```
    
    public class BonusScore implements  GameScore{
@@ -96,7 +98,7 @@
     }
 }
 
-```
+	```
    
 
  ## implementación clase 
@@ -112,7 +114,7 @@
      */
     int CalculateScore(int CorrectCount, int IncorrectCount) throws GameScoreException;
 }
-```
+	```
 
 
 4. Haga commit de lo realizado hasta ahora. Desde la terminal:
