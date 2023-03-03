@@ -1,56 +1,36 @@
 ### Escuela Colombiana de Ingeniería
 
-### Procesos de Desarrollo de Software
-
-### Desarrollo Dirigido por Pruebas + DIP + DI + Contenedores Livianos
-
-
-Para este taller se va a trabajar sobre el juego del ahorcado.
-
-El sistema actual de puntuación del juego comienza en 100 puntos y va
-descontando 10 puntos cada vez que se propone una letra incorrecta.
-
-Algunos usuarios han propuesto diferentes esquemas para realizar la
-puntuación, los cuales se describen a continuación:
-
-* OriginalScore: 
-    * Es el esquema actual, se inicia con 100 puntos.
-    * No se bonifican las letras correctas.
-    * Se penaliza con 10 puntos con cada letra incorrecta.
-    * El puntaje minimo es 0.
-
-* BonusScore: 
-    * El juego inicia en 0 puntos.
-    * Se bonifica con 10 puntos cada letra correcta.
-    * Se penaliza con 5 puntos cada letra incorrecta.
-    * El puntaje mínimo es 0
-    
-* PowerBonusScore:
-    * El juego inicia en 0 puntos.
-    * La $i-ésima$ letra correcta se bonifica con $5^i$.
-    * Se penaliza con 8 puntos cada letra incorrecta.
-    * El puntaje mínimo es 0
-    * Si con las reglas anteriores sobrepasa 500 puntos, el puntaje es
-      500.
-
-Lo anterior, se traduce en el siguiente modelo, donde se aplica el
-principio de inversión de dependencias:
+### Presentado por
+## Gabriel Alejandro Silva Lozada 
+## Santiago Naranjo Melo 
 
 
-![](img/model.png)
 
 
 ### Parte I
 
 1. Clone el proyecto (no lo descargue!).
+
+![image](https://user-images.githubusercontent.com/98113396/222854840-a402df86-94ca-481c-b0ab-a0bdf9587d9e.png)
+
    
 2. A partir del código existente, implemente sólo los cascarones del
    modelo antes indicado.
+   
+   ## powerScore
+   
+   ![image](https://user-images.githubusercontent.com/98113396/222854918-6be4450a-caf7-4896-988a-7f7319e58ade.png)
+   
+   ## originalScore
+   
+   ![image](https://user-images.githubusercontent.com/98113396/222854991-2eb8c441-503e-48ed-9509-6ab609783d31.png)
+   
+   ## Bonus
+   ![image](https://user-images.githubusercontent.com/98113396/222855084-4c5ac7bb-8d2c-4562-a11b-d577777df64b.png)
 
-3. Haga la especificación de los métodos calculateScore (de las tres
-   variantes de GameScore), a partir de las especificaciones
-   generales dadas anteriormente. Recuerde tener en cuenta: @pre,
-   @pos, @param, @throws.
+ ## implementación clase 
+ ![image](https://user-images.githubusercontent.com/98113396/222855165-a3cbb222-663f-4b70-92f2-8a1ffc687af3.png)
+
 
 4. Haga commit de lo realizado hasta ahora. Desde la terminal:
 
