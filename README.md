@@ -140,9 +140,17 @@
 	git add .			
 	git commit -m "implementación pruebas"
 	```
+	
+	![image](https://user-images.githubusercontent.com/98113396/222856402-d30a804a-8d72-40fd-8f4b-5bcf3450d8ef.png)
+
+	
+	
 9. Realice la implementación de los 'cascarones' realizados anteriormente.
    Asegúrese que todas las pruebas unitarias creadas en los puntos anteriores
    se ejecutan satisfactoriamente.
+   
+   ![image](https://user-images.githubusercontent.com/98113396/222856448-5b14c119-81bf-44db-9184-49286093b19d.png)
+
 
 10. Al finalizar haga un nuevo commit:
 
@@ -150,6 +158,9 @@
 	git add .			
 	git commit -m "implementación del modelo"
 	```
+	
+	![image](https://user-images.githubusercontent.com/98113396/222856347-75499ad9-ce0b-4066-9a33-b13d179b64e4.png)
+
 
 11. Para sincronizar el avance en el respositorio y NO PERDER el trabajo, use
     el comando de GIT para enviar los cambios:
