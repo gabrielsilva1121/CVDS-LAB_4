@@ -109,7 +109,6 @@
 }
 ```
 
-## parte labo
 
 4. Haga commit de lo realizado hasta ahora. Desde la terminal:
 
