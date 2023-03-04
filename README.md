@@ -90,7 +90,7 @@
         return score;
     }
 }
-```
+	```
    
 
  ## implementación clase 
@@ -106,10 +106,9 @@
      */
     int CalculateScore(int CorrectCount, int IncorrectCount) throws GameScoreException;
 }
-	
 ```
 
-##parte labo
+## parte labo
 
 4. Haga commit de lo realizado hasta ahora. Desde la terminal:
 
