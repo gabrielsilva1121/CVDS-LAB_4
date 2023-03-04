@@ -68,7 +68,8 @@
     }
     }
 		
-```
+		```     
+
 ## Bonus
    
    ```
@@ -90,7 +91,7 @@
         return score;
     }
 }
-	```
+```
    
 
  ## implementación clase 
